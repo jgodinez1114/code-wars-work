@@ -25,3 +25,5 @@ function decodeMorse(morseCode) {
     }
     return finalCode;
 }
+
+decodeMorse('... .')
