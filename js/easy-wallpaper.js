@@ -25,6 +25,11 @@ function wallpaper(l, w, h) {
     // round up, get value of int as a number
     return numbers[Math.ceil(compensatedArea / paperSize)];
 }
+// clever solution vvvvv
+// function wallpaper(l, w, h) {
+//     let arr = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'];
+//     return (l==0 || w == 0 || h == 0) ? arr[0] : arr[Math.ceil(2.3*((l/0.52)/(10/h)+(w/0.52)/(10/h)))];
+//   }
 
 function testing(actual, expected) {
     Test.assertEquals(actual, expected)
