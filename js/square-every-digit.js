@@ -11,3 +11,5 @@ function squareDigits(num) {
     }
     return Number(squaredString);
 }
+
+console.log('888 returns: ', squareDigits(888));
