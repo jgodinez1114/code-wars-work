@@ -17,5 +17,15 @@ function XO(str) {
     return true ? oCount === xCount : false;
 }   // end XO()
 
+// alternate solution
+// function XO(str) {
+//     let x = str.match(/x/gi); // g modifier: global. All matches; i modifier: insensitive 
+//     let o = str.match(/o/gi);
+//     return (x && x.length) === (o && o.length);
+/* } NOTE: g modifier: global. All matches (don't return on first match)
+
+        i modifier: insensitive. Case insensitive match (ignores case of [a-zA-Z])
+ */
+
 console.log(XO('this is xo a test'));
 console.log(XO('this is xo a testx'));
