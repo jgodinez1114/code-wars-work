@@ -27,9 +27,18 @@ function DNAstrand(dna) {
     return complementaryDNA.join('');
 }   // end DNAstrand()
 
-console.log('sending TTTAACCCGG', DNAstrand('TTTAACCCGG'));
+// alternate solution
+var dnaPairs = { 'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C' };
+
+// function DNAstrand(dna) {
+//     return dna.split('').map(function (val) {
+//         return dnaPairs[val]
+//     }).join('');
+// }
+
+console.log('sending TTTATACCCGG', DNAstrand('TTTATACCCGG'));
 
 // sample tests
-Test.assertEquals(DNAStrand("AAAA"), "TTTT", "String AAAA is");
-Test.assertEquals(DNAStrand("ATTGC"), "TAACG", "String ATTGC is");
-Test.assertEquals(DNAStrand("GTAT"), "CATA", "String GTAT is");
+// Test.assertEquals(DNAStrand("AAAA"), "TTTT", "String AAAA is");
+// Test.assertEquals(DNAStrand("ATTGC"), "TAACG", "String ATTGC is");
+// Test.assertEquals(DNAStrand("GTAT"), "CATA", "String GTAT is");
