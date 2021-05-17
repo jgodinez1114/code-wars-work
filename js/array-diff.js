@@ -25,6 +25,8 @@ function arrayDiff(a, b) {
 // }
 
 console.log(arrayDiff([2, 6, 7, 8, 7,], [3, 5, 6, 4, 7]));
+console.log(arrayDiff([2, 6, 7, 8, 1,0], [3, 5, 6, 4, 7]));
+
 
 // smaple tests
 // Test.describe("Sample tests", function () {
