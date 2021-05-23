@@ -26,6 +26,18 @@ function alphabetPosition(text) {
     return text.substring(0, text.length - 1)
 }   // end alphabetPosition()
 
+// alternate solution
+function betterAlphabetPosition(text) {
+    var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    return text.toLowerCase().split('')
+        .filter(letter => {
+            let index = alphabet.indexOf(letter);
+            return index > -1;
+        })
+        .map(letter => alphabet.indexOf(letter) + 1)
+        .join(' ')
+}
+
 console.log(alphabetPosition('this is a good day!'));
 console.log(alphabetPosition('z.z.z/z.z/z.z/z.z/z.'));
 
