@@ -6,24 +6,25 @@
  */
 
 function solution(str) {
-    // declare a new array
-    let pairsArr = []
-    // check the string length to add '_' if necessary
-    if (str.length % 2 !== 0) {
-        str = str.concat('_')
-    }
-    // traverse the string 
-    for (var i = 0; i < str.length; i += 2) {
-        // add the chars as pairs
-        pairsArr.push(str.slice(i, i + 2))
-    }
-    // return the resultingArr 
-    return pairsArr
+  // declare a new array
+  const pairsArr = [];
+  let moddedStr;
+  // check the string length to add '_' if necessary
+  if (str.length % 2 !== 0) {
+    moddedStr = str.concat('_');
+  }
+  // traverse the string
+  for (let i = 0; i < moddedStr.length; i += 2) {
+    // add the chars as pairs
+    pairsArr.push(moddedStr.slice(i, i + 2));
+  }
+  // return the resultingArr
+  return pairsArr;
 }
 
-console.log(solution('jfj'))
-console.log(solution('sslkdjf'))
-console.log(solution('kdkdkdkflskdjf'))
+console.log(solution('jfj'));
+console.log(solution('sslkdjf'));
+console.log(solution('kdkdkdkflskdjf'));
 
 // sample tests
 // const { assert } = require('chai');
