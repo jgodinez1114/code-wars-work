@@ -28,7 +28,7 @@ function betterAnagrams(word, words) {
   return words.filter((element) => [...element].sort().join('') === sortedWord);
 }
 
-console.log(betterAnagrams('lessgo', ['aga', 'gossle', 'essgol']));
+console.log(anagrams('lessgo', ['aga', 'gossle', 'essgol']));
 console.log(betterAnagrams('abba', ['aga', 'abab']));
 console.log(betterAnagrams('yesss', ['sssey', 'gossle']));
 
